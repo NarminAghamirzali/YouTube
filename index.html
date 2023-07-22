@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icons/youtubemini.svg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>YouTube</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <button class="hamburger-menu" onclick="hideMenu()">
+                    <img src="img/icons/menu.svg" alt="menu">
+                </button>
+                <div class="youtube-logo-block">
+                    <a href="https://www.youtube.com/">
+                        <img src="img/icons/youtube.svg" alt="youtube-logo" class="youtube-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="search d-flex justify-content-start">
+                    <form class="input-group" role="search">
+                      <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn-search d-flex" type="submit">
+                        <img src="img/icons/search.svg" alt="" width="18px">
+                      </button>
+                    </form>
+                    <div class="microphone d-flex">
+                        <img src="img/icons/microphone.svg" alt="" height="16px">
+                    </div>
+            </div>
+            <div class="account d-flex">
+                <button type="button" class="acc-btn"><img src="img/icons/add-video.svg" alt=""></button>
+                <button type="button" class="acc-btn"><img src="img/icons/notification.svg" alt=""></button>
+                <div class="acc-btn-container d-flex">
+                <button type="button" class="acc-btn-img"><img src="img/pp/pp.jpg" alt="" width="32px"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-aside-container d-flex">
+        <div id="hidden-items">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="hidden-btn">
+                                <img src="img/icons/home.svg" alt="">
+                                <p>Home</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="hidden-btn">
+                                <img src="img/icons/shorts.png" alt="">
+                                <p>Shorts</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="hidden-btn">
+                                <img src="img/icons/subscriptions.svg" alt="">
+                                <p>Subscriptions</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="hidden-btn">
+                                <img src="img/icons/library.svg" alt="">
+                                <p>Library</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <aside id="sidebar">
+            <section class="sidebar-section bottom-line">
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <ul>
+                        <li><a href="https://www.youtube.com/">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/home.svg" alt="">
+                                <p>Home</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://www.youtube.com/shorts/gVPhaZOW-rQ">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/shorts.png" alt="">
+                                <p>Shorts</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://www.youtube.com/feed/subscriptions">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/subscriptions.svg" alt="">
+                                <p>Subscriptions</p>
+                            </div>
+                        </a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group-vertical upper-line" role="group" aria-label="Vertical button group">
+                    <ul>
+                        <li><a href="https://www.youtube.com/feed/library">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/library.svg" alt="">
+                                <p>Library</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://www.youtube.com/feed/history">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/history.svg" alt="">
+                                <p>History</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://studio.youtube.com/channel/UCIJCMBEKffXbDkTT_1rCsrg/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/yourVideos.svg" alt="">
+                                <p>Your Videos</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=WL">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/watchLater.svg" alt="">
+                                <p>Watch Later</p>
+                            </div>
+                        </a></li>
+                        <li><a href="https://www.youtube.com/playlist?list=LL">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/liked.svg" alt="">
+                                <p>Liked Videos</p>
+                            </div>
+                        </a></li>
+                        <li><button type="button" class="">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/arrowBottom.svg" alt="">
+                                <p>Show More</p>
+                            </div>
+                        </button>
+                        </li>
+                    </ul>
+                  </div>
+            </section>
+            <section class="sidebar-section bottom-line">
+                  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <ul>
+                        <p>Subscriptions</p>
+                        <li><a href="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/webdevsimplified.jpg" alt="">
+                                <p>Web Dev Simplified</p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/prototurk.jpg" alt="">
+                                <p>PROTOTURK</p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/alex.jpg" alt="">
+                                <p>Alex Lee</p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/yakinKampus.jpg" alt="">
+                                <p>Yakın Kampüs</p>
+                            </div>
+                        </a></li>
+                        <li><a href="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/dm.jpg" alt="">
+                                <p>Dev Material</p>
+                            </div>
+                        </a></li>
+                        <li><button type="button" class="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/kevin.jpg" alt="">
+                                <p>Kevin Powell</p>
+                            </div>
+                        </button>
+                        </li>
+                        <li><button type="button" class="">
+                            <div class="sidebar-btn">
+                                <img src="img/pp/freeCodeCamp.jpg" alt="">
+                                <p>Free Code Camp</p>
+                            </div>
+                        </button>
+                        </li>
+                        <li><button type="button" class="">
+                            <div class="sidebar-btn">
+                                <img src="img/icons/arrowBottom.svg" alt="">
+                                <p>Show More</p>
+                            </div>
+                        </button>
+                        </li>
+                    </ul>
+                  </div>
+            </section>
+            <section class="sidebar-section bottom-line">
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                  <ul>
+                      <p>Explore</p>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/trendings.png" alt="">
+                              <p>Trending</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/live.svg" alt="">
+                              <p>Live</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/gaming.svg" alt="">
+                              <p>Gaming</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/sports.svg" alt="">
+                              <p>Sports</p>
+                          </div>
+                      </a></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="sidebar-section bottom-line">
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                  <ul>
+                    <p>More From YouTube</p>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/ytStudio.png" alt="">
+                              <p>YouTube Studio</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/ytKids.png" alt="">
+                              <p>YouTube Kids</p>
+                          </div>
+                      </a></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="sidebar-section bottom-line">
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                  <ul>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/settings.svg" alt="">
+                              <p>Settings</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/report.svg" alt="">
+                              <p>Report history</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/help.svg" alt="">
+                              <p>Help</p>
+                          </div>
+                      </a></li>
+                      <li><a href="">
+                          <div class="sidebar-btn">
+                              <img src="img/icons/feedback.svg" alt="">
+                              <p>Send feedback</p>
+                          </div>
+                      </a></li>
+                  </ul>
+                </div>
+            </section>
+            <div id="guide-links-primary">
+                <a href="">About</a>
+                <a href="">Press</a>
+                <a href="">CopyRight</a>
+                <a href="">Contact Us</a>
+                <a href="">Creators</a>
+                <a href="">Adversite</a>
+                <a href="">Developers</a>
+            </div>
+            <div id="guide-links-secondary">
+                <a href="">Terms</a>
+                <a href="">Privacy</a>
+                <a href="">Policy & Safety</a>
+                <a href="">How YouTube Works</a>
+                <a href="">category New Features</a>
+            </div>
+            <div id="copyright">
+                <p>© 2023 Google LLC</p>
+            </div>
+        </aside>
+        <main>
+            <div class="nav-wrapper">
+                <div class="nav-container">
+                    <div class="nav-scroll">
+                        <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"> &#9665; </button>
+                        <button class="btn-scroll" id="btn-scroll-right" onclick="scrollHorizontally(-1)"> &#9655; </button>
+                        <div class="categories-container">
+                            <a href="#" class="category">All</a>
+                            <a href="#" class="category">Mix</a>
+                            <a href="#" class="category">Music</a>
+                            <a href="#" class="category">Animation</a>
+                            <a href="#" class="category">Live</a>
+                            <a href="#" class="category">Food channels</a>
+                            <a href="#" class="category">Rap</a>
+                            <a href="#" class="category">Last loaded</a>
+                            <a href="#" class="category">Watched</a>
+                            <a href="#" class="category">New videos</a>
+                            <a href="#" class="category">Beauty advice</a>
+                            <a href="#" class="category">Comedy</a>
+                            <a href="#" class="category">Video games</a>
+                            <a href="#" class="category">Video games</a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="main-content">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-content">
+                            <div class="video-img"><a href=""><img src="img/video-covers/1.jpg" alt=""></a></div>
+                            
+                            <div class="video-details d-flex">
+                                <a href=""><img src="img/pp/webdevsimplified.jpg" alt=""></a>
+                                <div class="info">
+                                    <h3><a href="">Learn React in 40 minutes!</a></h3>
+                                    <div class="metadata">
+                                        <a href="">Web Dev Simplified</a>
+                                        <div class="metadata-line">
+                                            <span class="wiews">197K Wiews</span>
+                                            <span class="date">3 years ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
